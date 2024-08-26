@@ -36,5 +36,12 @@ agent any
 				sh 'sudo systemctl start nginx'
 			}
 		}
+
+		stage ('Status-nginx')
+		{
+			steps {
+				sh 'sudo systemctl status nginx'
+			}
+		}
 		
 	}
